@@ -20,7 +20,7 @@ categories:
 
 托管服务器可以选择自己从阿里云等云服务商购买的诸如ECS或者轻量服务器等虚假服务器，也可以是一些免费或者付费的虚拟空间，或者托管于GitHub Pages或coding等。其中使用第三方服务商提供的托管服务较为便捷，本博客正是托管于GitHub Pages。选择GitHub Pages托管个人博客，顺便附带了GitHub级别的防ddos服务，虽然个人小博客也基本不会遭遇ddos。
 
-域名的话可以选择使用GitHub提供的*.github.io二级域名，当然如果感觉不够酷、不够个性的话可以选择到[freenom](https://www.freenom.com/zh/index.html)注册.tk等免费域名，或者到[阿里云](https://wanwang.aliyun.com/domain/)等域名注册站购买付费域名。关于域名的注册解析将在另一篇文章 [注册自己的域名并绑定GitHub博客](bear://x-callback-url/open-note?id=48492594-DFEA-4AFE-AD81-0BECD61EAE2A-19839-0000865E3A5A8199&header=%E6%B3%A8%E5%86%8C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E5%B9%B6%E7%BB%91%E5%AE%9AGitHub%E5%8D%9A%E5%AE%A2) 展开。不过当前GitHub似乎不能绑定中文域名，后期有新发现的话会通过博客更新。
+域名的话可以选择使用GitHub提供的*.github.io二级域名，当然如果感觉不够酷、不够个性的话可以选择到[freenom](https://www.freenom.com/zh/index.html)注册.tk等免费域名，或者到[阿里云](https://wanwang.aliyun.com/domain/)等域名注册站购买付费域名。关于域名的注册解析将在另一篇文章{% post_link 域名注册、解析、blog绑定 %}展开。
 
 快速blog生成工具中比较火的有Wordpress，Hexo等，其中Wordpress可以实现更多更专业的功能，更多的用在个人服务器上建站来用；Hexo较为轻量简洁，本博客正是基于hexo框架。Hexo可以通过简单的命令实现本地预览功能，并直接发布到WEB容器中实现同步。
 
@@ -224,11 +224,11 @@ menu:
 诸如数据统计与分析，评论系统，阅读统计，内容分享服务等功能暂未添加，有待后续实现，也将在系列博客进行介绍。
 
 ## **个人域名绑定**
-当前博客域名为GitHub提供的二级域名，如想要绑定自己的域名，按照本节操作即可，若无该方面需求可以跳过。本文默认读者已经拥有一个自己的域名，并且可以正常解析。如果尚未拥有自己的域名，阅读 [注册自己的域名并绑定GitHub博客](bear://x-callback-url/open-note?id=48492594-DFEA-4AFE-AD81-0BECD61EAE2A-19839-0000865E3A5A8199&header=%E6%B3%A8%E5%86%8C%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E5%B9%B6%E7%BB%91%E5%AE%9AGitHub%E5%8D%9A%E5%AE%A2)即可。
+当前博客域名为GitHub提供的二级域名，如想要绑定自己的域名，按照本节操作即可，若无该方面需求可以跳过。本文默认读者已经拥有一个自己的域名，并且可以正常解析。如果尚未拥有自己的域名，阅读{% post_link 域名注册、解析、blog绑定 %}即可。
 
 ### **创建CNAME文件**
 
-终端cd到next主题中的source文件夹，然后使用touch命令创建无后缀的CNAME文件，之后通过vim操作将自己的域名添加进去即可。
+终端cd到next主题中的source文件夹，然后使用touch命令创建无后缀的CNAME文件，之后通过vim操作将自己的域名添加进去即可。不过要注意如果是中文域名的话，要先将中文域名转换为[**Punycode标准编码的字符串**](http://www.webmasterhome.cn/tool/punycode.asp)，然后使用转换之后的域名即可。
 ![](./9.png)
 
 ### **域名解析**

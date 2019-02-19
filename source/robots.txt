@@ -8,4 +8,4 @@ Disallow: /css/
 Disallow: /fonts/
 
 
-Sitemap: https://hydd.tk/sitemap.xml
+Sitemap: https://hydd.me/sitemap.xml
