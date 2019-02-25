@@ -563,6 +563,9 @@ busuanzi_count:
   page_pv: true
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer: 次
+  # page_uv: true
+  # page_uv_header: <i class="fa fa-file-o"></i>
+  # page_uv_footer: 次
 
 
 # Tencent analytics ID
